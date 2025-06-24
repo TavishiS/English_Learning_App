@@ -1,12 +1,27 @@
-# Ignore virtual environment
-tavi/
-
-# Python cache
+# --- Python ---
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Django
+# --- Django ---
 db.sqlite3
+*.sqlite3
+*.log
 
-# Node modules (if using React)
-frontend/node_modules/
+# --- Environment Files ---
+**/.env
+
+# --- Virtual Environment ---
+tavi/
+
+# --- Node.js ---
+**/node_modules/
+*.lock
+
+# --- Build ---
+build/
+dist/
+
+# --- VS Code ---
+.vscode/
