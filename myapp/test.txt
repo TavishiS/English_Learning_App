@@ -1,0 +1,8 @@
+from django.contrib.auth.models import User
+from myapp.models import UserProgress
+
+user = User.objects.get(username='tavi')  # use actual username
+progress = UserProgress.objects.get(user=user)
+
+print(progress.phrases_practiced)          # Should print 1 or 2
+print(progress.seen_phrases.count())       # Should match above
